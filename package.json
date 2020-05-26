@@ -1,15 +1,12 @@
 {
   "name": "resource-devtools",
-  "version": "0.0.0",
+  "description": "Development tool for generating resource authorization files",
+  "version": "1.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build": "ng build --prod"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.1.3",
     "@angular/common": "~9.1.3",
@@ -19,6 +16,7 @@
     "@angular/platform-browser": "~9.1.3",
     "@angular/platform-browser-dynamic": "~9.1.3",
     "@angular/router": "~9.1.3",
+    "ng-zorro-antd": "^9.1.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -43,5 +41,17 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
-  }
+  },
+  "author": {
+    "name": "kain",
+    "email": "zhangtqx@vip.qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kainonly/resource-devtools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kainonly/resource-devtools/issues"
+  },
+  "license": "MIT"
 }
