@@ -1,5 +1,5 @@
 {
-  "name": "resource-devtools",
+  "name": "rbac-devtools",
   "description": "Development tool for generating resource authorization files",
   "version": "1.0.0",
   "scripts": {
@@ -49,10 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kainonly/resource-devtools.git"
+    "url": "git+https://github.com/kainonly/rbac-devtools.git"
   },
   "bugs": {
-    "url": "https://github.com/kainonly/resource-devtools/issues"
+    "url": "https://github.com/kainonly/rbac-devtools/issues"
   },
   "license": "MIT"
 }
