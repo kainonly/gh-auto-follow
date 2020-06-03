@@ -1,3 +1,3 @@
-# Resource Devtools
+# RBAC Devtools
 
-Development tool for generating resource authorization files
+Development tool for generating rbac authorization files
