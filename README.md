@@ -1,3 +1,3 @@
-# RBAC Devtools
+# Github Mutual Attention
 
-Development tool for generating rbac authorization files
+Automatically synchronize Github users to follow each other
