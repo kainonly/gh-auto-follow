@@ -1,4 +1,4 @@
-# Github Mutual Attention
+# Github Auto Follow
 
 Automatically synchronize Github users to follow each other
 
