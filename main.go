@@ -4,26 +4,20 @@ import (
 	"context"
 	"errors"
 	"follow/common"
+	"github.com/tencentyun/scf-go-lib/cloudfunction"
 	"github.com/thoas/go-funk"
 	"log"
 	"os"
-	"time"
 )
 
 func main() {
-	result, err := sync()
-	if err != nil {
-		panic(err)
-	}
-	log.Println(result)
+	cloudfunction.Start(Sync)
 }
 
 var RequestForbidden = errors.New("request forbidden")
 
-func sync() (result interface{}, err error) {
-	api := common.NewAPI(os.Getenv("USER"), os.Getenv("TOKEN"))
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
-	defer cancel()
+func Sync(ctx context.Context) (err error) {
+	api := common.NewAPI(os.Getenv("USERNAME"), os.Getenv("TOKEN"))
 	var followers []common.Follower
 	if followers, err = api.GetFollowers(ctx); err != nil {
 		return
@@ -54,8 +48,9 @@ func sync() (result interface{}, err error) {
 			return
 		}
 	}
-	return map[string]interface{}{
+	log.Println(map[string]interface{}{
 		"add": add,
 		"del": del,
-	}, nil
+	})
+	return
 }

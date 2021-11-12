@@ -1,0 +1,11 @@
+{
+  "name": "gh-auto-follow",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "go build -o dist/main main.go",
+    "deploy": "npm run build && serverless deploy"
+  },
+  "peerDependencies": {
+    "serverless": "https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md"
+  }
+}

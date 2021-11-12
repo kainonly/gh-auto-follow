@@ -1,2 +1,4 @@
 /.idea
-/serverless.yml
+/dist
+.env
+serverless.yml

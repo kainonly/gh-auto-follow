@@ -8,6 +8,6 @@ import (
 var api *API
 
 func TestMain(m *testing.M) {
-	api = NewAPI(os.Getenv("USER"), os.Getenv("TOKEN"))
+	api = NewAPI(os.Getenv("USERNAME"), os.Getenv("TOKEN"))
 	os.Exit(m.Run())
 }
