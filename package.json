@@ -1,5 +1,8 @@
 {
   "name": "gh-auto-follow",
+  "scripts": {
+    "start": "node ./index.js"
+  },
   "version": "1.0.0",
   "dependencies": {
     "octokit": "^2.0.7"

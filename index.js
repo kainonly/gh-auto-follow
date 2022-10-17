@@ -1,6 +1,11 @@
 const { Octokit } = require('octokit');
 const { username, token } = process.env;
 
+if (!username || !token) {
+  console.log('请设置环境变量 USERNAME 与 TOKEN');
+  return;
+}
+
 const octokit = new Octokit({ auth: token });
 
 async function bootstrap() {
