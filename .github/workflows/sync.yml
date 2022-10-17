@@ -1,0 +1,23 @@
+name: 定时同步
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+  push:
+    branches: ['main']
+
+env:
+  username: kainonly
+  token: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm ci
+      - run: npm start
