@@ -8,7 +8,7 @@ on:
 
 env:
   username: kainonly
-  token: ${{ secrets.GITHUB_TOKEN }}
+  token: ${{ secrets.TOKEN }}
 
 jobs:
   sync:
