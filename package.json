@@ -4,7 +4,7 @@
     "start": "node ./index.js"
   },
   "dependencies": {
-    "octokit": "^3.1.0"
+    "octokit": "^3.1.2"
   },
   "devDependencies": {
     "prettier": "*"
